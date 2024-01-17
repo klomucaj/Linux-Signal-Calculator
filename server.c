@@ -18,7 +18,7 @@ void handleClient() {
         read data from client, calculate the math problem, 
         and write the answer to the problem in a file for the client.
     */
-   signal(SIGUSR1, handleClient); // keep the signal reffering to this function
+   signal(SIGUSR1, handleClient);  // keep the signal reffering to this function
 
    int pid;
    pid = fork();
